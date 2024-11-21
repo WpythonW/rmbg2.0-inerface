@@ -12,8 +12,8 @@ A simple web application for removing backgrounds from images using AI.
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/WpythonW/rmbg2.00-inerface.git
+cd https://github.com/WpythonW/rmbg2.00-inerface.git
 ```
 
 2. Create a directory for models:
