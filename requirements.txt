@@ -1,0 +1,15 @@
+accelerate
+opencv-python
+spaces
+pillow
+numpy
+timm
+kornia
+prettytable
+typing
+scikit-image
+huggingface_hub
+transformers
+gradio
+gradio_imageslider
+loadimg

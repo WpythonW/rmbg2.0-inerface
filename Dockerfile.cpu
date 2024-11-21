@@ -1,0 +1,18 @@
+# Dockerfile.cpu
+FROM huggingface/transformers-torch-light
+
+WORKDIR /app
+
+# Копирование файлов проекта
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копирование кода
+COPY rmbg.py .
+
+# Создание и настройка директории для моделей
+RUN mkdir -p /app/models
+ENV HF_HOME=/app/models
+
+# Запуск приложения
+CMD ["python3", "rmbg.py"]
