@@ -64,7 +64,7 @@ docker compose -f docker-compose.gpu.yml exec rmbg-gpu bash
 
 After launch, the application will be available at:
 ```
-http://localhost:7860
+http://localhost:8501
 ```
 
 ## Stopping
