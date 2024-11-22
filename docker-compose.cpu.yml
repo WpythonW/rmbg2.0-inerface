@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile.cpu
     ports:
-      - "7860:7860"
+      - "8501:8501"
     volumes:
       - ./models:/app/models
     environment:

@@ -10,6 +10,5 @@ typing
 scikit-image
 huggingface_hub
 transformers
-gradio
-gradio_imageslider
+streamlit
 loadimg

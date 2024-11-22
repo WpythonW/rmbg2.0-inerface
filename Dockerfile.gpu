@@ -1,23 +1,15 @@
-# Dockerfile.gpu
 FROM huggingface/transformers-pytorch-gpu:latest
 
 WORKDIR /app
 
-# Установка системных зависимостей
-RUN apt-get update && apt-get install -y \
-    python3-pip \
-    && rm -rf /var/lib/apt/lists/*
-
-# Копирование файлов проекта
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копирование кода
-COPY rmbg.py .
+COPY . .
 
-# Создание и настройка директории для моделей
 RUN mkdir -p /app/models
 ENV HF_HOME=/app/models
 
-# Запуск приложения
-CMD ["python3", "rmbg.py"]
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app.py"]

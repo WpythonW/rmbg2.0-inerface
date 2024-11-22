@@ -1,0 +1,13 @@
+venv/
+**pycache**/
+.git/
+.gitignore
+*.pyc
+input_imgs/
+output_imgs/
+models/
+.ipynb_checkpoints/
+*.ipynb
+README.md
+Dockerfile*
+docker-compose*
